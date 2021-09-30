@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  ul,
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  button,
+  input {
+    border: 0;
+  }
+  button:focus,
+  input:focus {
+    border: 0;
+  }
+  
+header {
+  background: #d7d4ff;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 374px;
+  padding: 0 20px;
+}
+.text h1 {
+  height: 95px;
+  margin-top: 55px;
+  font: 32px "Merriweather";
+  color: #2b2b2b;
+}
+.text p {
+  height: 96px;
+  font: 18px "Lato";
+  color: #555555;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+.text button {
+  border: none;
+  width: 155px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #6c63ff;
+  color: white;
+  font: 20px "Lato";
+  margin-top: 32px;
+  cursor: pointer;
+}
+
+.container img {
+  margin-top: 114px;
+  width: 350px;
+  margin-bottom: 88px;
+}
+/*=============CARDS CONTAINER===================*/
+
+.cards-container {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 75px 20px;
+}
+.card-color {
+  height: 222px;
+  width: 340px;
+}
+.card {
+  width: 100%;
+  width: 340px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 20%);
+}
+.card-text {
+  padding: 24px 30px 31px 30px;
+  text-align: center;
+}
+.card-text h3 {
+  font: 24px "Merriweather";
+  color: #2b2b2b;
+  margin-bottom: 26px;
+}
+.card-text p {
+  font: 18px "Lato";
+  color: #555555;
+}
+
+/*============CONTACT===============*/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #d7d4ff;
+  padding: 83px 0 56px 0;
+}
+.contact h2 {
+  font: 32px "Merriweather";
+  color: #2b2b2b;
+}
+.contact form {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 36px;
+}
+form input {
+  width: 100%;
+  height: 60px;
+  padding: 18px 11px;
+  border: none;
+  border-radius: 6px;
+  color: #6e7275;
+  margin-bottom: 40px;
+  font: 18px "Lato";
+}
+form textarea {
+  width: 100%;
+  padding: 18px 11px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 45px;
+  color: #6e7275;
+  font: 18px "Lato";
+  resize: none;
+}
+form button {
+  width: 100%;
+  height: 50px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font: 20px "Lato";
+  cursor: pointer;
+}
+
+@media screen and (min-width: 720px) {
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 354px;
+    padding: 0 15px 0 20px;
+  }
+
+  /*==========CARDS=========*/
+
+  .cards-container {
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 150px 0 100px 0;
+    padding: 0 20px;
+  }
+  .container img {
+    width: 340px;
+    margin-bottom: 88px;
+    margin-right: 20px;
+  }
+
+  .card-color {
+    height: 222px;
+    width: 100%;
+  }
+  .card {
+    width: 340px;
+  }
+  .contact {
+    width: 100%;
+  }
+  .contact form {
+    width: 471px;
+    align-items: center;
+  }
+  .contact form input,
+  .contact form textarea,
+  .contact form button {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  header {
+    padding: 77px 100px 120px 100px;
+    width: 100%;
+  }
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1236px;
+    height: 364px;
+  }
+  .container img {
+    width: 500px;
+  }
+
+  /*=========CARDS========*/
+
+  .cards-container {
+    width: 1242px;
+    height: 914px;
+    display: flex;
+    margin: 150px 90px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card {
+    width: 340px;
+    height: 423px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-text {
+    height: 211px;
+  }
+
+  .contact form {
+    width: 471px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact form {
+    width: 471px;
+  }
+  .contact form input {
+    width: 100%;
+  }
+  .contact form textarea {
+    width: 100%;
+  }
+}
